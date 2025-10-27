@@ -4,9 +4,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://aws-0-us-east-1.pooler.supabase.com:5432/postgres
-    username: postgres.yhnqvpahxejfqltzzjxp
-    password: B4$3d3d4t0$
+    url: jdbc:postgresql://localhost:5432/PROJECT_ONE
+    username: postgres
+    password: ramesh
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
