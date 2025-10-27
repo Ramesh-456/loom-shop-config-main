@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8003
  # forward-headers-strategy: framework   # 👈 agrega esto
 
 spring:
