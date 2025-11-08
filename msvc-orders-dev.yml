@@ -1,6 +1,9 @@
 server:
   port: 8001
-
+razorpay:
+  api:
+    key: rzp_test_RdGpt8q2Dy0hkE
+    secret: YpOSOTGYz5560TBf6oPNVWng
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/PROJECT_ONE
