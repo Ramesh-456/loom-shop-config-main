@@ -16,7 +16,16 @@ spring:
         - id: msvc-products
           uri: lb://msvc-products
           predicates:
-            - Path=/api/products/**,/api/categories/**,/ws/**
+            - Path=/api/products/**,/api/categories/**
+          # ===========================
+          #  WebSocket Route (REQUIRED)
+          # ===========================
+        - id: websocket-route
+          uri: lb://msvc-products
+          predicates:
+            - Path=/ws/**
+          filters:
+            - RemoveRequestHeader=Sec-WebSocket-Protocol
           #filters:
           #  - StripPrefix=1
         - id: msvc-orders
