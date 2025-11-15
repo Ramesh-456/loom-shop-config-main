@@ -21,7 +21,7 @@ spring:
           #  WebSocket Route (REQUIRED)
           # ===========================
         - id: websocket-route
-          uri: lb://msvc-products
+          uri: lb:ws://msvc-products
           predicates:
             - Path=/ws/**
           filters:
