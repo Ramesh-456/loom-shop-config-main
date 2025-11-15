@@ -11,6 +11,8 @@ spring:
     name: msvc-gateway
   cloud:
     gateway:
+      websocket:
+        enabled: true
       #webflux:
       routes:
         - id: msvc-products
