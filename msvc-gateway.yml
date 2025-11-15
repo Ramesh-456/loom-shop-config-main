@@ -16,7 +16,7 @@ spring:
         - id: msvc-products
           uri: lb://msvc-products
           predicates:
-            - Path=/api/products/**,/api/categories/**,/ws
+            - Path=/api/products/**,/api/categories/**,/ws/**
           #filters:
           #  - StripPrefix=1
         - id: msvc-orders
