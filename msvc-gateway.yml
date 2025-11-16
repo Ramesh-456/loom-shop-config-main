@@ -26,8 +26,6 @@ spring:
           uri: lb:ws://msvc-products
           predicates:
             - Path=/ws/**
-          filters:
-            - RemoveRequestHeader=Sec-WebSocket-Protocol
           #filters:
           #  - StripPrefix=1
         - id: msvc-orders
